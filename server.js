@@ -7,7 +7,6 @@ const app = express();
 
 const logger = (req, res, next) => {
   req.hello = "hello";
-  console.log("middle ran");
   next();
 };
 
